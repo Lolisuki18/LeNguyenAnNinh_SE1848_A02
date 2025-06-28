@@ -11,5 +11,6 @@ namespace Repositories
     {
         public Employee? GetEmpByUsenameAndPassword(string useName, string password);
         public List<Employee> GetAllEmployees();
+        public bool UpdateEmployee(Employee employee);
     }
 }

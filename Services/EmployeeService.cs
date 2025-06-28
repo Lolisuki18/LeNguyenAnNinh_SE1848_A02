@@ -22,5 +22,7 @@ namespace Services
 
         public Employee? GetEmpByUsenameAndPassword(string useName, string password) => iemployeeRepository.GetEmpByUsenameAndPassword(useName, password);
 
+        public bool UpdateEmployee(Employee employee) => iemployeeRepository.UpdateEmployee(employee);
+
     }
 }

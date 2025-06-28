@@ -15,5 +15,7 @@ namespace Repositories
 
         public Employee? GetEmpByUsenameAndPassword(string useName, string password) => EmployeeDAO.Instance.GetEmpByUsenameAndPassword(useName, password);
 
+        public bool UpdateEmployee(Employee employee) => EmployeeDAO.Instance.UpdateEmployee(employee);
+
     }
 }

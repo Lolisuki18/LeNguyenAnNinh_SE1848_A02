@@ -54,5 +54,20 @@ namespace DataAccessLayer
                 return null;
             }
         }
+        public bool UpdateEmployee(Employee employee)
+        {
+            try
+            {
+                using var context = new LucyContext();
+                context.Employees.Update(employee);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error in UpdateEmployee: " + ex.Message);
+                return false;
+            }
+        }
     }
 }

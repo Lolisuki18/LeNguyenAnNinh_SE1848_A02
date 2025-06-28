@@ -1,0 +1,29 @@
+<Window x:Class="LeNguyenAnNinhWpfApp.CustomerDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lê Nguyễn An Ninh-SE181799-Customer pop up" Height="350" Width="400" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="Company Name:"/>
+            <TextBox x:Name="txtCompanyName" Margin="0,5"/>
+            <TextBlock Text="Contact Name:"/>
+            <TextBox x:Name="txtContactName" Margin="0,5"/>
+            <TextBlock Text="Contact Title:"/>
+            <TextBox x:Name="txtContactTitle" Margin="0,5"/>
+            <TextBlock Text="Phone:"/>
+            <TextBox x:Name="txtPhone" Margin="0,5"/>
+            <TextBlock Text="Address:"/>
+            <TextBox x:Name="txtAddress" Margin="0,5"/>
+			<TextBlock Foreground ="Red" Margin="0,5">ID sẽ được thêm tự động , và không được chỉnh sửa id</TextBlock>
+        </StackPanel>
+		
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="OK" Width="80" Margin="0,0,10,0" Click="BtnOK_Click"/>
+            <Button Content="Cancel" Width="80" Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
